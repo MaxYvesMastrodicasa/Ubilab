@@ -1,5 +1,6 @@
 package io.ubilab.result.service
 
+import io.ubilab.result.ConcatModelService
 import io.ubilab.result.model.Result
 import org.scalatest.matchers.must.Matchers
 import org.scalatest.funspec.AnyFunSpec
@@ -14,6 +15,7 @@ class ResultServiceSpec extends AnyFunSpec with Matchers {
     it("devrait être initialisé avec une liste de résultat vide") {
 
       resultService.getAllResult shouldEqual List()
+      "test 0"
     }
   }
 
@@ -36,6 +38,7 @@ class ResultServiceSpec extends AnyFunSpec with Matchers {
     it("devrait avoir une liste de 1 résultat non vue") {
 
       resultService.getAllResult.length shouldEqual 1
+      "test 2"
 
     }
 
@@ -44,6 +47,7 @@ class ResultServiceSpec extends AnyFunSpec with Matchers {
       resultService.seenResult(46)
       resultService.getAllResultSeen().length shouldEqual 1
       resultService.getAllResult().head.isSeen shouldEqual true
+      "test 3"
     }
 
   }

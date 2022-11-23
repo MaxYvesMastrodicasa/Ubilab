@@ -1,26 +1,24 @@
 package io.ubilab.result.service
-
-import io.ubilab.result.model.Result
+import io.ubilab.result.model._
+import scala.util.Random
 
 class ResultService {
 
+  def addResult(result:Result) = {}
 
-  def addResult(result:Result) = ???
+  def seenResult(idResult:Int) = {}
 
+  def unseenResult(idResult:Int) = {}
 
-  def seenResult(idResult:Int) = ???
+  def getAllResult():List[Result] = List(Result)
 
-  def unseenResult(idResult:Int) = ???
+  def getAllResultSeen():List[Result] = List()
 
-  def getAllResult():List[Result] = List()
+  def getAllResultUnSeen():List[Result] = List()
 
-  def getAllResultSeen():List[Result] = ???
-  def getAllResultUnSeen():List[Result] = ???
-
-  def numberOfEventSeen:Int =  ???
+  def numberOfEventSeen:Int = ???
 }
 
 object ResultService {
-
   def build:ResultService = new ResultService
 }
